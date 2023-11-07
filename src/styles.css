@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+:root {
+  --white-color: #f1f1f1;
+  --blue-color: rgb(48, 174, 224);
+  --dark-blue-color: rgb(38, 159, 207);
+  --red-color: rgb(255, 67, 34);
+  --mute-color: rgb(73, 73, 73);
+  --black-color: #131419;
+  --font-size: 18px;
+}
+* {
+  font-family: "Quicksand", "Courier New", Courier, monospace;
+}
+.container {
+  display: block;
+  text-align: center;
+  margin-top: 5rem;
+}
+.card {
+  text-align: left;
+  display: inline-block;
+  background: var(--white-color);
+  padding: 1.5rem 1.9rem;
+  max-width: 1000px;
+  width: 80%;
+  min-width: 200px;
+  border: 0.12rem solid var(--blue-color);
+  border-radius: 5px;
+  box-shadow: 13px 13px 26px #c8c8c8, -13px -13px 26px #ffffff;
+  margin-bottom: 2.5rem;
+}
+.card > .card-header {
+  display: flex;
+}
+.card > .card-header > .user-info {
+  display: flex;
+  width: 100%;
+}
+.card > .card-header > .user-info > .profile-pic {
+  max-width: 100px;
+  max-height: 100px;
+  width: 10vw;
+  height: 10vw;
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid var(--blue-color);
+  box-shadow: 8px 8px 16px #c8c8c8, -8px -8px 16px #ffffff;
+}
+.card > .card-header > .user-info > .info {
+  display: block;
+  margin-left: 1rem;
+  margin-right: 0.3rem;
+  margin-top: 0.6rem;
+  /* background-color: blue; */
+}
+.card > .card-header > .user-info > .info > span {
+  color: var(--black-color);
+  font-size: larger;
+  font-weight: bold;
+}
+.card > .card-header > .user-info > .info > small {
+  color: var(--mute-color);
+}
+.card > .card-header > .info-right > .botao {
+  width: max-content;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  font-weight: bold;
+  font-size: medium;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 3px;
+  margin-top: 0.3rem;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px #c8c8c8, -8px -8px 16px #ffffff;
+}
+
+.card > .card-header > .info-right >.botao:hover {
+  background-color: var(--dark-blue-color);
+  box-shadow: none;
+}
+.card > .card-body {
+  font-size: 1.4rem;
+  margin: 2rem 0.1rem;
+}
+.card > .card-footer {
+  padding-top: 1rem;
+  color: var(--red-color);
+}
+.card > .card-footer > .foot-item >  {
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
+.card > .card-footer > .foot-item >,
+.card > .card-footer > .foot-item > {
+  animation: beat 0.25s infinite alternate;
+  margin-right: 0.6rem;
+}
+.card > .card-header > .info-right > #follow-btn-sm {
+  border-radius: 50%;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .card > .card-header > .info-right > #follow-btn-sm {
+    display: block;
+  }
+  .card > .card-header > .info-right > #follow-btn-lg {
+    display: none;
+  }
+}
+.card > .card-header > .info-right2 > .botao {
+  width: max-content;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  font-weight: bold;
+  font-size: medium;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 3px;
+  margin-top: 0.3rem;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px #c8c8c8, -8px -8px 16px #ffffff;
+}
+
+.card > .card-header > .info-right2 > .botao:hover {
+  background-color: var(--dark-blue-color);
+  box-shadow: none;
+}
+.card > .card-body {
+  font-size: 1.4rem;
+  margin: 2rem 0.1rem;
+}
+.card > .card-footer {
+  padding-top: 1rem;
+  color: var(--red-color);
+}
+.card > .card-footer > .foot-item >  {
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
+.card > .card-footer > .foot-item >,
+.card > .card-footer > .foot-item > {
+  animation: beat 0.25s infinite alternate;
+  margin-right: 0.6rem;
+}
+.card > .card-header > .info-right2 > #follow-btn-sm2 {
+  border-radius: 50%;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .card > .card-header > .info-right2 > #follow-btn-sm2 {
+    display: block;
+  }
+  .card > .card-header > .info-right2 > #follow-btn-lg2 {
+    display: none;
+  }
+}
+
